@@ -1,23 +1,27 @@
 //написать функцию, которая принимает строку и возвращает кол-во гласных(латиница)[a,o,u,i,e]. Учитывать и верхний регистр.
-function vowels (str){
-  const res =str.replace(/['a','e','i','o','u','y','A','E','I','O','U','Y']/gi,'');
-  return str.length-res.length;
-  }
+// function vowels (str){
+//   const res =str.replace(/['a','e','i','o','u','y','A','E','I','O','U','Y']/gi,'');
+//   return str.length-res.length;
+//   }
 let str='TEST testovich';
-const test=vowels(str);
-
+//onst test=vowels(str);
+function  vowelsTwo (str){
+  const test=['a','e','i','o','u','y','A','E','I','O','U','Y'];
+  return 
+}
 
 //написать функцию нахождения степени числа, в том числе для отрицательной степени. Использовать рекурсию.
 function powv(numb,deg){
- 
-  if(deg<=1){
-    return numb;
-  }
-  else{
-    return numb+powv(numb,deg-1);
-  }
+  //   if(deg<=1){
+  //     return numb;
+  //   }
+  //   else{
+  //     return numb*powv(numb,deg-1);
+  //   }
+  return numb**deg;
+  
 };
-
+console.log(powv(5,3));
 
 //написать функцию, которая принимает число и возвращает вложенные пары круглых скобок, равные этому числу. Использовать рекурсию. Например,  pairBrackets(3), должна вывести:  ((())). Если число меньше 1 - выводим одну пару скобок.
 
@@ -39,3 +43,10 @@ console.log(minMax(arr));
 
 let arrow=(numb1,numb2,...numbN)=>numb1*numb2*numbN.reduce((sum, current) => sum * current);
 console.log(arrow(1,2,3,4,5,6));
+
+function foo(str){
+  const test=['a','e','i','o','u','y','A','E','I','O','U','Y'];
+  let res=str.array.forEach(element => {
+    
+  });
+}
